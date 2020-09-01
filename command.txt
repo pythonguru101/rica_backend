@@ -1,0 +1,45 @@
+============== token ==================
+curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -i 'http://54.228.50.10//api/v1/o/token/' --data '{"username":"champion_327@hotmail.com","client_secret":"","client_id":"champion_327@hotmail.com","grant_type":"password","password":"durkfjrj"}'
+
+============= monitor/system_info/ ================
+curl -X GET -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer z7oJRJ1jDuHV51vuxiyJZpbMUIoNd7' -i 'http://localhost:8000/api/v1/monitor/system_info/'
+
+===================================================
+curl -X GET -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer Q819msBDstBbfG3T6dNAKlbbkTdOKi' -i 'http://localhost:8000/api/v1/profile/'
+
+===================================================
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer yLOu0OVnd8AFZlclLBvttohlYoNAax' -i 'http://localhost:8000/api/v1/rica_user_login/' --data '{"username":"5345170713", "password": "PVcoqj"}'
+
+===================================================
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer LFH5DMYIbgySOhT2Qvc7SRmDPOldIm' -i 'http://localhost:8000/api/v1/rica_user_signup/' --data '{"mobile_number":"5345170728", "password":"durkfjrj", "name":"e", "id_photo":"", "address":"e", "is_checked": "True"}'
+
+======================================================
+curl -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -i 'http://54.228.50.10/api/v1/o/token/' --data '{"username":"surajbohra210@gmail.com","client_secret":"","client_id":"surajbohra210@gmail.com","grant_type":"password","password":"durkfjrj"}'
+
+======================================================
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer dtuwJuy3LQ27nGbKX2Up89NjSl2X6o' -i 'http://localhost:8000/api/v1/sub_agent_signup/' --data '{"mobile_number":"5345170713", "name":"a", "surname":"a", "id_passport_number":"a123", "id_passport_expiry_date": "2020-08-30", "photo_of_id":"download.jpg", "address1":"a", "address2": "", "address3":"", "postal_code":"", "photo_of_proof":"download.jpg"}'
+
+======================================================
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer j1qPy0a91a3NTM2hAZaNz8WWoC2IfY' -i 'http://localhost:8000/api/v1/rica_customer_register/' --data '{"network":"a", "new_existing_subscriber":"a", "register_with":"a", "sim":"3245656109", "last4": "6123", "id_type":"a", "country":"South Africa", "id_number": "a", "full_name":"a", "surname":"a", "country_code":"a", "area_code":"a", "dailing_number":"a", "address1":"a", "address2":"", "address3":"", "suburb":"a", "postal_code":"a", "city_or_town":"a", "proof_of_address":"False"}'
+
+========================================================
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer cGH1AuMZwHU2icMR4oj20e7RqzaBFS' -i 'http://localhost:8000/api/v1/id_passport_number_validate/' --data '{"id_or_passport_num":"MQ1337301"}'
+
+sample ID number: 6212235256083
+sample passport number: MQ1337301
+
+=========================================================
+curl -X GET -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer O0WFak6tlvsC2xLnlWwhTOZQ5IxoLo' -i 'http://54.228.50.10/api/v1/last10_sub_agent/'
+
+==========================================================
+curl -X GET -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer PNpMpY2QbvxL0GyxloVkLVdPiHSr0Z' -i 'http://localhost:8000/api/v1/last10_rica_customer/'
+
+==========================================================
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: bearer sHw4If1tUQZkrK75f2ZhhGrILv3Dxq' -i 'http://54.228.50.10/api/v1/login_sms_otp/'
+
+
+
+
+
+
+

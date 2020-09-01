@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="container">
+    <h2>Rica Officers</h2>
+    <table class="table">
+      <tr>
+        <td style="color: chartreuse">Mobile Number</></td>
+        <td style="color: chartreuse">Name</td>
+        <td style="color: chartreuse">ID photo</td>
+        <td style="color: chartreuse">Address</td>
+        <td style="color: chartreuse">Status</td>
+      </tr><br>
+      {% for rica_officer in rica_officers %}
+        <tr>
+          <td>{{ rica_officer.mobile_number }}</td>
+          <td>{{ rica_officer.name }}</td>
+          <td><a href="http://54.228.50.10/media/{{ rica_officer.id_photo }}">{{ rica_officer.id_photo }}</a></td>
+          <td>{{ rica_officer.address }}</td>
+          {% if rica_officer.is_checked == True %}
+            <td><span class="badge" style="color: chartreuse">{{ rica_officer.is_checked }}</span></td>
+          {% else %}
+            <td><span class="badge" style="color: red">{{ rica_officer.is_checked }}</span></td>
+          {% endif %}
+        </tr>
+      {% endfor %}
+      <!-- etc -->
+    </table>
+  </div>
+{% endblock %}
